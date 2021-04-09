@@ -6,7 +6,7 @@ import 'package:food_app/pages/detail/detail.dart';
 
 class FoodGrid extends StatelessWidget {
   const FoodGrid({
-    Key key,
+    Key? key,
   }) : super(key: key);
 
   @override
@@ -66,7 +66,7 @@ class FoodGrid extends StatelessWidget {
                   children: [
                     Text(
                       item.name,
-                      style: Theme.of(context).textTheme.headline6.apply(
+                      style: Theme.of(context).textTheme.headline6?.copyWith(
                             color: Colors.black,
                           ),
                     ),
@@ -80,7 +80,7 @@ class FoodGrid extends StatelessWidget {
                     SizedBox(height: padding / 2),
                     Text(
                       "\$${item.price}",
-                      style: Theme.of(context).textTheme.headline6.apply(
+                      style: Theme.of(context).textTheme.headline6?.copyWith(
                             color: Colors.black,
                           ),
                     ),

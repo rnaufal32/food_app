@@ -10,7 +10,7 @@ import 'component/price_fab.dart';
 class DetailPage extends StatelessWidget {
   final Food food;
 
-  const DetailPage({Key key, this.food}) : super(key: key);
+  const DetailPage({Key? key, required this.food}) : super(key: key);
 
   @override
   Widget build(BuildContext context) {

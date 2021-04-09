@@ -4,7 +4,7 @@ import 'package:food_app/config/constant.dart';
 
 class FoodCategory extends StatelessWidget {
   const FoodCategory({
-    Key key,
+    Key? key,
   }) : super(key: key);
 
   @override

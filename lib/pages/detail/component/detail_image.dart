@@ -4,8 +4,8 @@ import 'package:food_app/model/food.dart';
 
 class DetailImage extends StatelessWidget {
   const DetailImage({
-    Key key,
-    @required this.food,
+    Key? key,
+    required this.food,
   }) : super(key: key);
 
   final Food food;
@@ -52,7 +52,7 @@ class DetailImage extends StatelessWidget {
                 style: Theme.of(context)
                     .textTheme
                     .headline4
-                    .apply(color: Colors.black),
+                    ?.copyWith(color: Colors.black),
               ),
             ),
           ),

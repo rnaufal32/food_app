@@ -7,5 +7,10 @@ class Food {
   final int price;
   final Color color;
 
-  Food({this.name, this.desc, this.asset, this.price, this.color});
+  Food(
+      {required this.name,
+      required this.desc,
+      required this.asset,
+      required this.price,
+      required this.color});
 }

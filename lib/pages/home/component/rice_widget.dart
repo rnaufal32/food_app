@@ -5,7 +5,7 @@ import 'package:food_app/pages/detail/detail.dart';
 
 class RiceWidget extends StatelessWidget {
   const RiceWidget({
-    Key key,
+    Key? key,
   }) : super(key: key);
 
   @override
@@ -44,7 +44,7 @@ class RiceWidget extends StatelessWidget {
                 children: [
                   Text(
                     sushi.name,
-                    style: Theme.of(context).textTheme.headline6.apply(
+                    style: Theme.of(context).textTheme.headline6?.apply(
                           color: Colors.black,
                         ),
                   ),
@@ -58,7 +58,7 @@ class RiceWidget extends StatelessWidget {
                   SizedBox(height: padding / 2),
                   Text(
                     "\$${sushi.price}",
-                    style: Theme.of(context).textTheme.headline6.apply(
+                    style: Theme.of(context).textTheme.headline6?.apply(
                           color: Colors.black,
                         ),
                   ),

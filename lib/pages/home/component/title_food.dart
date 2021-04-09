@@ -3,7 +3,7 @@ import 'package:food_app/config/constant.dart';
 
 class TitleFood extends StatelessWidget {
   const TitleFood({
-    Key key,
+    Key? key,
   }) : super(key: key);
 
   @override

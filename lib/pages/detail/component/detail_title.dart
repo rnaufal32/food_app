@@ -3,8 +3,8 @@ import 'package:food_app/model/food.dart';
 
 class DetailTitle extends StatelessWidget {
   const DetailTitle({
-    Key key,
-    @required this.food,
+    Key? key,
+    required this.food,
   }) : super(key: key);
 
   final Food food;
@@ -19,7 +19,7 @@ class DetailTitle extends StatelessWidget {
             style: Theme.of(context)
                 .textTheme
                 .headline4
-                .apply(color: Colors.black),
+                ?.copyWith(color: Colors.black),
           ),
           TextSpan(
             text: food.desc,

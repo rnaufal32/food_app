@@ -4,8 +4,8 @@ import 'package:food_app/model/food.dart';
 
 class PriceFab extends StatelessWidget {
   const PriceFab({
-    Key key,
-    @required this.food,
+    Key? key,
+    required this.food,
   }) : super(key: key);
 
   final Food food;

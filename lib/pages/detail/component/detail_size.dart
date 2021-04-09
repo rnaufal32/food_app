@@ -3,7 +3,7 @@ import 'package:food_app/config/constant.dart';
 
 class DetailSize extends StatelessWidget {
   const DetailSize({
-    Key key,
+    Key? key,
   }) : super(key: key);
 
   @override
@@ -46,7 +46,7 @@ class DetailSize extends StatelessWidget {
             ),
             child: Text(
               "M",
-              style: Theme.of(context).textTheme.headline6.apply(
+              style: Theme.of(context).textTheme.headline6?.copyWith(
                     color: Colors.white,
                   ),
             ),
